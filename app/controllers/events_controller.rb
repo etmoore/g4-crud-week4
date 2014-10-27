@@ -10,8 +10,8 @@ class EventsController < ApplicationController
 
   def create
     @event = Event.new(params.require(:event).permit(:date, :location, :description, :capacity, :requires_id))
-    if @client.save
-      redirect_to @client
+    if @event.save
+      redirect_to root_path, notice: "Event successfully created."
     else
       render "new"
     end
