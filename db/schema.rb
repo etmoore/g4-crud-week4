@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20141027164424) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "event_tables", force: true do |t|
+  create_table "events", force: true do |t|
     t.date    "date"
     t.string  "location"
     t.text    "description"
