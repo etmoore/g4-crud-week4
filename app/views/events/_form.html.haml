@@ -1,0 +1,17 @@
+= form_for @event do |f|
+  = f.label :date
+  = f.date_field :date
+
+  = f.label :location
+  = f.text_field :location
+
+  = f.label :description
+  = f.text_field :description
+
+  = f.label :capacity
+  = f.text_field :capacity
+
+  = f.label "Requires id?"
+  = f.check_box :requires_id
+
+  = f.submit
