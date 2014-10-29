@@ -1,5 +1,5 @@
 %button
-  = link_to "New Event", new_events_path
+  = link_to "New Event", new_event_path
 %table.table
   %thead
     %tr
@@ -16,3 +16,4 @@
         %td=event.description
         %td=event.capacity
         %td=event.requires_id
+        %td=link_to "Show", event_path(event)
