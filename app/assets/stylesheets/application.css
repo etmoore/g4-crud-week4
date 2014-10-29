@@ -23,3 +23,11 @@ td, th {
   padding: 5px 20px;
   text-align: center;
 }
+
+.form-group{
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 5px;
+}
